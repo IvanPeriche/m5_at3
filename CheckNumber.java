@@ -1,4 +1,5 @@
 public class CheckNumber {
+    
     private double number;
 
     public CheckNumber(double num) {
