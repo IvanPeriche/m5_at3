@@ -1,10 +1,21 @@
 import org.junit.Test;
  import static org.junit.Assert.*;
+
+ /**
+ * Aquest codi es un test que comprova els possibles resultats del codi CheckNumber
+ * @author IvanPeriche
+ * @version 1.0
+ */
+
+  
  
  public class TreballadorTest {
+    
+      /**
+     * @param 
+     */
  
      @Test
- 
      public void testNomTreballadorIncorrecte() {
          /*
           * Aquest test prova si el programa detecta que volem assignar un nom incorrecte
