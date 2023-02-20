@@ -1,10 +1,16 @@
 /**
 * Classe per a calcular el cost total de les nomines del personal
-*
-* @author INSMontsià
-*
+/**
+* Aquest codi es un test que comprova els possibles resultats del codi CompteCorrent
+* @author IvanPeriche
+* @version 1.0
 */
+
 public class CostPersonal {
+      /**
+     * @param 
+     */
+
 // static enum TipusTreballador{
 // DIRECTOR, SUBDIRECTOR, BASE
 // }
