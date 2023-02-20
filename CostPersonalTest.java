@@ -10,11 +10,23 @@ import org.junit.Test;
 
  public class CostPersonalTest {
 
+        Treballador treballador1 = new Treballador("Ivan", Treballador.DIRECTOR, 1000, 0);
+        Treballador treballador2 = new Treballador("Iker", Treballador.SUBDIRECTOR, 800, 0);
+        Treballador treballador3 = new Treballador("Hugo", Treballador.BASE, 800, 10);
+
+        Treballador[] treballadors = {treballador1, treballador2, treballador3};
+
         @Test
-        public void testCostTreballadorDirector() {
-        Treballador director = new Treballador(Treballador.TipusTreballador.DIRECTOR, 10000f, 0);
-        float cost = CostPersonal.CostTreballador(director);
-        assertEquals(10000f, cost, 0.001f);
+        public void CostPersonalTest1() {
+
+            Treballador treballador1 = new Treballador("Ivan", Treballador.DIRECTOR, 1000, 0);
+            Treballador treballador2 = new Treballador("Iker", Treballador.SUBDIRECTOR, 800, 0);
+            Treballador treballador3 = new Treballador("Hugo", Treballador.BASE, 800, 10);
+            Treballador[] treballadors = {treballador1, treballador2, treballador3};
+
+            float expected = 1000 + 800 + 800 +(10*20);
+            float result = CostPersonal.CalculaCostDelPersonal(treballadors);
+            assertEquals(expected, result, 0.0);
         }
 
         @Test
